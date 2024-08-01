@@ -1,0 +1,34 @@
+
+<div class="bootstrap-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 ">
+      <div class="container text-center">
+     <img class="img-fluid" style="width: 100px;" src="/assets/OIP.jpeg"   />" 
+    </div>
+     <h3 class="text-center">Login here !!!!</h3>
+        <form  (ngSubmit)="OnSubmit()">
+          
+          <mat-form-field class="full" appearance="outline">
+              <mat-label>Enter Username</mat-label>
+              <input type="text" name="username" [(ngModel)]="credentials.username" matInput>
+            </mat-form-field>
+      
+            <mat-form-field class="full" appearance="outline">
+              <mat-label>Enter password</mat-label>
+              <input type="password" name="password" [(ngModel)]="credentials.password" matInput>
+            </mat-form-field>
+      <div class="container text-center">
+
+     
+            <button type="submit"  mat-flat-button >Submit</button>
+            <button type="reset" style="margin-left: 5px;"   mat-flat-button color="primary" >Reset</button>
+          </div>
+          </form>
+        {{credentials | json}}  
+      </div>  
+      </div>
+  </div>
+</div>
+
+ 

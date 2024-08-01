@@ -1,0 +1,15 @@
+.primary{
+    background: pink;
+}
+.surprize{
+    flex: 1 1 auto;
+}
+rt{
+    
+    margin: 20px;
+    
+}
+.primary a{
+    text-decoration: none;
+    color: inherit;
+}
